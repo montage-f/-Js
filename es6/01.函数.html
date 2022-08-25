@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest参数</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    // ES6 引入 rest 参数，用于获取函数的实参，用来代替 arguments
+    // rest 参数非常适合不定个数参数函数的场景
+    let fun = (...params) => {
+        console.log(params)
+    }
+    fun(1, 2, 3)
+    let fun1 = (a, b, ...params) => {
+        console.log(a, b, params)
+    }
+    fun1(1, 2, 3)
+</script>

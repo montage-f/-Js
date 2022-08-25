@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread 扩展运算符</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<script>
+    let tyfoys = ['德玛西亚之力', '德玛西亚之翼', '德玛西亚皇子']
+    function fn(...rest) {
+        console.log(rest)
+        console.log(arguments)
+    }
+    fn(...tyfoys)
+    let skillOne = {
+        q: '致命打击',
+        q1: '致命打击2',
+    };
+    let skillTwo = {
+        w: '勇气'
+    };
+    let skillThree = {
+        e: '审判'
+    };
+    let skillFour = {
+        r: '德玛西亚正义'
+    };
+    let gailun = {...skillOne, ...skillTwo,...skillThree,...skillFour};
+    console.log(gailun)
+</script>
